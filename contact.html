@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cool Social Links</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(120deg, #1f1c2c, #928dab);
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .social-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+      padding: 3rem;
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(15px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+      animation: float 6s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-15px); }
+    }
+
+    .social-section h2 {
+      color: #fff;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .social-links {
+      display: flex;
+      gap: 2rem;
+    }
+
+    .social-links a {
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      text-decoration: none;
+      color: #fff;
+      font-size: 1.8rem;
+      background: rgba(255,255,255,0.15);
+      transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+    }
+
+    .social-links a:hover {
+      transform: scale(1.2);
+      background: linear-gradient(135deg, #f88808, #ff7e5f);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    }
+  </style>
+</head>
+
+<body>
+  <section class="social-section">
+    <h2>Let's Connect</h2>
+    <div class="social-links">
+      <a href="https://www.instagram.com/yamkela.lusithi/" target="_blank"><img src="Images/Instagram_logo_2022.svg.webp" width="40"></a>
+      <a href="https://www.tiktok.com/@yamkela.r" target="_blank"><img src="Images/Tiktok_icon.svg.png" width="40"></a>
+      <a href="lusithiyamkela@gmail.com" target="_blank"><img src="Images/newgmaillogo.webp" width="40"></a>
+    </div>
+  </section>
+
+</body>
+</html>

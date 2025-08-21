@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yamkela Lusithi | Social Website</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+<style>
+/* ---------- BODY ---------- */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #fff;
+  overflow-x: hidden;
+}
+
+/* ---------- HEADER ---------- */
+header {
+  position: fixed;
+  width: 100%;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+header .logo {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #e60023;
+}
+
+header nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #333;
+  transition: 0.3s;
+}
+
+header nav a:hover {
+  color: #e60023;
+}
+
+/* ---------- HERO ---------- */
+.hero {
+  height: 80vh;
+  background: #e60023;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  padding-top: 60px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.typed-words {
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: white;
+  height: 2rem;
+  overflow: hidden;
+}
+
+/* ---------- FLYING WORDS ---------- */
+.flying-word {
+  position: absolute;
+  font-weight: bold;
+  color: rgba(255,255,255,0.7);
+  pointer-events: none;
+  font-size: 1rem;
+  animation: floatWord 10s linear infinite;
+}
+
+@keyframes floatWord {
+  0% {transform: translateY(100vh) translateX(0) rotate(0deg);}
+  100% {transform: translateY(-100vh) translateX(150px) rotate(360deg);}
+}
+
+/* ---------- GRID SECTIONS ---------- */
+.grid-section {
+  padding: 100px 20px 50px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.grid-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #e60023;
+  margin-bottom: 30px;
+}
+
+/* ---------- PIN GRID ---------- */
+.pinterest-grid {
+  column-count: 4;
+  column-gap: 15px;
+}
+
+.pin-item {
+  position: relative;
+  break-inside: avoid;
+  margin-bottom: 15px;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  transform: translateY(50px);
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.pin-item img {
+  width: 100%;
+  display: block;
+  border-radius: 16px;
+  transition: transform 0.3s ease;
+}
+
+.pin-item:hover img {
+  transform: scale(1.05);
+}
+
+.caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  font-size: 0.85rem;
+  text-align: center;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.pin-item:hover .caption {
+  opacity: 1;
+}
+
+/* ---------- LOOKBOOK ---------- */
+.lookbook-section {
+  margin-top: 50px;
+}
+
+.lookbook-title {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #e60023;
+  margin-bottom: 20px;
+}
+
+/* ---------- AI BOT ---------- */
+#aiBotContainer {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 250px;
+  max-width: 90%;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  padding: 15px;
+  z-index: 1000;
+}
+
+#aiBotContainer h3 {
+  margin-top: 0;
+  color: #e60023;
+  font-size: 1rem;
+}
+
+#aiOutput {
+  height: 80px;
+  overflow-y: auto;
+  margin-bottom: 8px;
+  border: 1px solid #ddd;
+  padding: 8px;
+  border-radius: 12px;
+  background: #f9f9f9;
+  font-size: 0.85rem;
+}
+
+#aiInput {
+  width: 100%;
+  padding: 8px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  margin-bottom: 6px;
+  font-size: 0.85rem;
+}
+
+#aiButton {
+  width: 100%;
+  padding: 8px;
+  border-radius: 12px;
+  border: none;
+  background: #e60023;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  text-align: center;
+  padding: 25px;
+  background: #fff0f3;
+  color: #666;
+  font-size: 0.85rem;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 1200px) {
+  .pinterest-grid { column-count: 3; }
+}
+
+@media (max-width: 900px) {
+  .pinterest-grid { column-count: 2; }
+  header { flex-direction: column; gap: 10px; padding: 15px;}
+}
+
+@media (max-width: 600px) {
+  .pinterest-grid { column-count: 1; }
+  .hero h1 { font-size: 2rem; }
+  .typed-words { font-size: 1.4rem; }
+  .hero p { font-size: 1rem; padding: 0 10px; }
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="logo">Yamkela Lusithi</div>
+  <nav>
+ <a href="#home">Home</a>
+    <a href="https://yamkela4458.github.io/Yamkela.com/project1.html">My Work</a>
+    <a href="contact.html">Contact</a>
+    <a href="lookbook.html">Lookbook</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <h1>Welcome to my World...</h1>
+  <div class="typed-words" id="typedWords"></div>
+  <p>A vibrant showcase of moments, moods, and style</p>
+</section>
+
+<!-- ANIMATED WORDS -->
+<script>
+const hero = document.querySelector('.hero');
+const words = ["Creativity","Tech","Style","Literacy","Inspiration","Innovation","Design","Fun"];
+setInterval(() => {
+  const wordEl = document.createElement('div');
+  wordEl.className = 'flying-word';
+  wordEl.style.left = Math.random()*window.innerWidth+'px';
+  wordEl.style.fontSize=12+Math.random()*15+'px';
+  wordEl.textContent=words[Math.floor(Math.random()*words.length)];
+  hero.appendChild(wordEl);
+  setTimeout(()=>wordEl.remove(),10000);
+},400);
+</script>
+
+<!-- TYPED WORDS -->
+<script>
+const typedPhrases=["Inspiration","Creativity","Telling a Story"];
+let typedIndex=0,charIndex=0;
+const typedElement=document.getElementById('typedWords');
+function type(){
+  if(charIndex<typedPhrases[typedIndex].length){
+    typedElement.textContent+=typedPhrases[typedIndex][charIndex];
+    charIndex++;
+    setTimeout(type,120);
+  } else setTimeout(erase,1200);
+}
+function erase(){
+  if(charIndex>0){
+    typedElement.textContent=typedPhrases[typedIndex].substring(0,charIndex-1);
+    charIndex--;
+    setTimeout(erase,80);
+  } else {typedIndex=(typedIndex+1)%typedPhrases.length; setTimeout(type,400);}
+}
+type();
+</script>
+
+<!-- LOOKBOOK -->
+<section class="lookbook-section grid-section" id="lookbook">
+  <h2 class="lookbook-title">Digital Lookbook</h2>
+  <div class="pinterest-grid">
+    <div class="pin-item"><img src="Images/0e534f58-3735-4818-9bc0-063295543bcc.jpg" alt=""><div class="caption">Keep Learning...</div></div>
+    <div class="pin-item"><img src="Images/ce01004d-adea-4844-912c-ab291d5bc4f7.jpg" alt=""><div class="caption">Slowly but surely</div></div>
+    <div class="pin-item"><img src="Images/bd0bbffa-7d34-40b1-b96f-0a00d137d4f5.jpg" alt=""><div class="caption">Remain Curious, there's always something new to learn</div></div>
+    <div class="pin-item"><img src="Images/Screenshot 2025-08-19 001330.png" alt=""><div class="caption">Letter Y...</div></div>
+    <div class="pin-item"><img src="Images/Me and the Homies as cats after we talked shit to….jpg" alt=""><div class="caption">Just njeee...</div></div>
+   <div class="pin-item"><img src="Images/454e46db-fdb5-4e25-898e-17a2740a627d.jpg" alt=""><div class="caption">For the love of reading</div></div>
+ <div class="pin-item"><img src="Images/Screenshot 2025-08-18 222622.png" alt=""><div class="caption">Ndabezitha...</div>
+
+  </div>
+</section>
+<!-- PROJECTS -->
+<section class="grid-section" id="projects">
+  <h2 class="grid-title">Projects</h2>
+  <div class="pinterest-grid">
+    <div class="pin-item"><img src="Images/acade8c9-5c8e-4d7f-bfbc-b357d823aa71.png" alt=""><div class="caption">FNB Interface</div></div>
+    <div class="pin-item"><img src="Images/IMG_9436.JPG" alt=""><div class="caption">Uni Research Website</div></div>
+    <div class="pin-item"><img src="Images/istockphoto-909462374-612x612.jpg" alt=""><div class="caption">Primary Education Website</div></div>
+</section>
+
+<!-- AI CHATBOT -->
+<div id="aiBotContainer">
+  <h3>Ray The AI 👳🏾‍♂️</h3>
+  <div id="aiOutput">Hi friend! Let's jam buddy....</div>
+  <input type="text" id="aiInput" placeholder="Type a question...">
+  <button id="aiButton">Send</button>
+</div>
+
+<script>
+// AI BOT
+const aiButton=document.getElementById('aiButton');
+const aiInput=document.getElementById('aiInput');
+const aiOutput=document.getElementById('aiOutput');
+const responses = [
+  "Sup dawg, or hey there it you're a girl, you feel me! Did you see any cool things today? ",
+  "I'm as cool as a magician my friend, have you tried casting some spells lately? ",
+  "Fun fact: You can still make it ",
+  "Love discovering new things? Me too! Let's explore together.",
+  "Need a break? Take one. ",
+  "Curiosity is the key buddy, keep asking ",
+  "Yo Yo Yo, a lot is going nyon with you",
+  "Ever thought about turning your ideas into something as cool as me Ray the AI, you feel me? ",
+];
+
+function speak(text){
+  const utter=new SpeechSynthesisUtterance(text);
+  utter.voice=speechSynthesis.getVoices()[0];
+  speechSynthesis.speak(utter);
+}
+aiButton.addEventListener('click',()=>{
+  const question=aiInput.value;
+  if(!question)return;
+  const answer=responses[Math.floor(Math.random()*responses.length)];
+  aiOutput.textContent=answer;
+  speak(answer);
+  aiInput.value="";
+});
+
+// SHOW 
+const pins=document.querySelectorAll('.pin-item');
+const observer=new IntersectionObserver(entries=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      entry.target.style.opacity=1;
+      entry.target.style.transform='translateY(0)';
+    }
+  });
+},{threshold:0.1});
+pins.forEach(pin=>observer.observe(pin));
+</script>
+
+<footer id="contact">
+  © 2025 Created by Yamkela Raymond Lusithi
+</footer>
+
+</body>
+</html>
+
+

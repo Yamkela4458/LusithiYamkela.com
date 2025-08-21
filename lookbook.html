@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pinterest Style Grid</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #fdfdfd;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .pinterest-section {
+      padding: 20px;
+    }
+
+    .title {
+      text-align: center;
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      color: #ff5a5f;
+    }
+
+    .pinterest-grid {
+      column-count: 3;   /* Pinterest style columns */
+      column-gap: 15px;
+    }
+
+    .pin-item {
+      position: relative;
+      margin-bottom: 15px;
+      break-inside: avoid;
+      overflow: hidden;
+      border-radius: 16px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .pin-item img {
+      width: 100%;
+      display: block;
+      border-radius: 16px;
+      transition: transform 0.3s ease;
+    }
+
+    .pin-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    .pin-item:hover img {
+      transform: scale(1.05);
+    }
+
+    /* Caption overlay */
+    .caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0,0,0,0.6);
+      color: #fff;
+      font-size: 0.9rem;
+      text-align: center;
+      padding: 8px;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .pin-item:hover .caption {
+      opacity: 1;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .pinterest-grid {
+        column-count: 2;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .pinterest-grid {
+        column-count: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="pinterest-section">
+    <h2 class="title">Creativity...</h2>
+    <div class="pinterest-grid">
+      <div class="pin-item">
+        <img src="Images/454e46db-fdb5-4e25-898e-17a2740a627d.jpg" alt="">
+        <div class="caption">Books over everything..</div>
+      </div>
+      <div class="pin-item">
+        <img src="Images/9EED730D-0CD0-4696-A1A3-EE0A2C1D3DB9.jpg" alt="">
+        <div class="caption">Nerdy...</div>
+      </div>
+      <div class="pin-item">
+        <img src="Images/bd0bbffa-7d34-40b1-b96f-0a00d137d4f5.jpg" alt="">
+        <div class="caption">Knowledge over everything..</div>
+      </div>
+      <div class="pin-item">
+        <img src="Images/7e489951-0b57-4450-82bd-829af6383eb3.jpg" alt="">
+        <div class="caption">Hello..</div>
+      </div>
+      <div class="pin-item">
+        <img src="Images/Me and the Homies as cats after we talked shit to….jpg" alt="">
+        <div class="caption">Just Vibes...</div>
+      </div>
+      <div class="pin-item">
+        <img src="Images/Screenshot 2025-08-19 001330.png" alt="">
+        <div class="caption">Letter Y...</div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
+
