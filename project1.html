@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yamkela Lusithi - Projects</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #0f0f1a;
+      color: #e0e0e0;
+    }
+
+    section#project {
+      max-width: 1200px;
+      margin: 50px auto;
+      padding: 20px;
+    }
+
+    section#project h1 {
+      text-align: center;
+      color: #ff6f61;
+      font-size: 2.2rem;
+      margin-bottom: 40px;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 30px;
+    }
+
+    .project-card {
+      background: #1b1b2f;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.7);
+    }
+
+    .project-card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      transition: transform 0.3s;
+    }
+
+    .project-card img:hover {
+      transform: scale(1.05);
+    }
+
+    .project-card h2 {
+      color: #4a90e2;
+      margin-bottom: 10px;
+      font-size: 1.5rem;
+    }
+
+    .project-card p {
+      margin: 5px 0;
+      line-height: 1.5;
+    }
+
+    .project-card ul {
+      list-style: none;
+      padding: 0;
+      margin: 10px 0;
+    }
+
+    .project-card ul li {
+      background: #22223b;
+      margin: 5px 0;
+      padding: 8px 12px;
+      border-radius: 6px;
+      font-size: 0.95rem;
+      transition: background 0.3s, transform 0.3s;
+    }
+
+    .project-card ul li:hover {
+      background: #ff6f61;
+      transform: translateX(5px);
+    }
+
+    .project-card a {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 18px;
+      background: #4a90e2;
+      color: #fff;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background 0.3s, transform 0.3s;
+    }
+
+    .project-card a:hover {
+      background: #ff6f61;
+      transform: translateY(-3px);
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      margin-top: 50px;
+      background: linear-gradient(135deg,#111126,#1a1a1a);
+      border-top: 3px solid #ff6f61;
+      color: #777;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 600px) {
+      section#project h1 { font-size: 1.8rem; }
+      .project-card h2 { font-size: 1.3rem; }
+    }
+  </style>
+</head>
+<body>
+  <a href="index.html" class="back-home-btn">Home</a>
+  <style>
+  .back-home-btn {
+  position: fixed;      
+  bottom: 20px;          
+  right: 20px;           
+  background-color: #9a9695;
+  color: #fff;
+  padding: 12px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+.back-home-btn:hover {
+  background-color: #e3a39f;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+}
+</style>
+
+<section id="project">
+  <h1>My Projects</h1>
+  <div class="project-grid">
+
+    <div class="project-card" tabindex="0">
+      <img src="images/IMG_9436.JPG" alt="Educational Website">
+      <h2>Educational Website for University Students</h2>
+      <p>Developed a responsive platform providing curated academic writing and research materials for students.</p>
+      <p>Implemented advanced search and filtering to improve resource accessibility and usability.</p>
+      <ul>
+        <li>Searchable database of research tools</li>
+        <li>Free academic eBooks & journal links</li>
+        <li>Open data/statistics sources integrated</li>
+        <li>Dark-themed interface for readability</li>
+      </ul>
+      <a href="https://yamkela4458.github.io/TheAcademics/" target="_blank">🌐 View Live Website</a>
+    </div>
+
+    <div class="project-card" tabindex="0">
+      <img src="images/acade8c9-5c8e-4d7f-bfbc-b357d823aa71.png" alt="FNB Chatbot">
+      <h2>FNB Chatbot Interface</h2>
+      <p>A clean, responsive chatbot mimicking FNB customer support built with HTML5, CSS, and vanilla JavaScript.</p>
+      <ul>
+        <li>Typewriter animation & glowing text effects</li>
+        <li>Floating background words (CSS only)</li>
+        <li>Responsive layout for desktop & mobile</li>
+        <li>Dynamic user/bot message bubbles</li>
+        <li>Email-ready form integration (EmailJS)</li>
+      </ul>
+      <a href="https://yamkela4458.github.io/FNB_Chatbot_demo/" target="_blank">🌐 View Live Website</a>
+    </div>
+
+    <div class="project-card" tabindex="0">
+      <img src="images/istockphoto-909462374-612x612.jpg" alt="MoneySave Jr">
+      <h2>MoneySave Jr – Interactive Financial Literacy Web Interface</h2>
+      <p>Built an engaging platform teaching children to manage pocket money with responsive, playful UI.</p>
+      <ul>
+        <li>Custom CSS animations: bouncing tabs, entrance effects, light FX</li>
+        <li>Responsive layout using Flexbox & Grid</li>
+        <li>Transparent UI elements with rgba overlays</li>
+        <li>Interactive buttons & input tools with hover effects</li>
+        <li>Weekly financial planner & pocket money calculator</li>
+      </ul>
+      <a href="https://yamkela4458.github.io/MoneySave-Jr/" target="_blank">🌐 View Live Website</a>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <p>Created by Yamkela Lusithi &copy; 2025</p>
+</footer>
+
+</body>
+</html>
