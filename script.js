@@ -1,10 +1,12 @@
 const words = [
-        "Code",
-        "Design",
-        "Development",
-        "Agile",
-        "Algorithms",
-      ];
+    "UX/UI",
+    "Education",
+    "EdTech",
+    "Research",
+    "Technology",
+    "Interactive Learning",
+    "Instructional Design"
+];
 
       function createFloatingWord(text) {
         const word = document.createElement("div");
@@ -150,4 +152,5 @@ function opentab(tabname) {
   event.currentTarget.classList.add("active-link");
   document.getElementById(tabname).classList.add("active-tab");
 }
+
       
