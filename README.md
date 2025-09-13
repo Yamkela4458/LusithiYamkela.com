@@ -1,7 +1,7 @@
 # 👋 Hi, I'm Yamkela  
 
-💻 Passionate about **Education, Technology, and UI/UX design**  
-🌱 Highly skilled in **Full Stack Development, Learning Experience Design and Design Tools**  
+ Passionate about **Education, Technology, and UI/UX design**  
+ Highly skilled in **Full Stack Development, Learning Experience Design and Design Tools**  
 
 ---
 
