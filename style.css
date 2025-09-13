@@ -292,6 +292,48 @@ button {
 .tab-titles p{
     font-size: 22px;
 }
+/* Tools Section */
+.tools {
+  background: #0a0f1c;
+  color: #e6eef8;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.tools-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #7dd3fc;
+}
+
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+.tool {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.tool i {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.tool span {
+  font-size: 0.95rem;
+  color: #98a0b3;
+}
+
+.tool:hover {
+  transform: translateY(-8px) scale(1.05);
+  color: #7dd3fc;
+}
 
 /* ------services----------- */
 #services{
@@ -866,4 +908,5 @@ button {
   background-color: #e55a4f;
   transform: translateY(-3px);
   box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+
 }
