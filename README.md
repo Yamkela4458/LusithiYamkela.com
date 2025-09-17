@@ -1,12 +1,11 @@
 # 👋 Hi, I'm Yamkela  
 
- Passionate about **Education, Technology, and UI/UX design**  
- Highly skilled in **Full Stack Development, Learning Experience Design and Design Tools**  
+ Highly skilled in **Front-End Web Development, Learning Experience Design and Design Tools**  
 
 ---
 
 ## 🛠️ Skills & Tools
-- **Programming & Development:** JavaScript (ES6+), HTML5, CSS3, Full Stack Development in EdTech 
+- **Programming & Development:** JavaScript (ES6+), HTML5, CSS3, Frontend Development 
 - **Design & Prototyping:** Figma (UI/UX design, wireframing, prototyping)  
 - **Tech Foundations:** Computer Hardware & Troubleshooting (CompTIA A+)  
 
