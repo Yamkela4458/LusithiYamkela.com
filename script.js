@@ -1,11 +1,9 @@
 const words = [
     "UX/UI",
-    "Education",
-    "EdTech",
-    "Research",
-    "Technology",
-    "Interactive Learning",
-    "Instructional Design"
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "React.js",
 ];
 
       function createFloatingWord(text) {
@@ -154,3 +152,4 @@ function opentab(tabname) {
 }
 
       
+
