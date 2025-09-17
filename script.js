@@ -33,7 +33,7 @@ const form = document.getElementById("chat-form");
 
 const yamkela = {
   name: "Yamkela Lusithi",
-  title: "Software Engineer & Full Stack Developer",
+  title: "Front-end Developer",
   email: "lusithiyamkela@gmail.com",
   phone: "+27 66 543 0254",
   location: "Johannesburg, Gauteng, South Africa",
@@ -152,4 +152,5 @@ function opentab(tabname) {
 }
 
       
+
 
