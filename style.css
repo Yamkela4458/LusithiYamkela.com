@@ -303,7 +303,7 @@ button {
 .tools-title {
   font-size: 2rem;
   margin-bottom: 2rem;
-  color: #7dd3fc;
+   color: #cbcdce;
 }
 
 .tools-grid {
@@ -364,7 +364,7 @@ button {
 }
 
 .services-list h2{
-    color: burlywood;
+    color: rgb(225, 223, 219);
 }
 .services-list p{
     color: white;
@@ -374,7 +374,7 @@ button {
 }
 
 .services-list div:hover{
-    background: burlywood;
+    background: rgb(214, 204, 189);
     transform: translateY(-10px);
 }
 .behind-build {
@@ -391,7 +391,7 @@ button {
   text-align: center;
   margin-bottom: 2rem;
   animation: fadeInDown 1s ease-in-out;
-  color: #f1af08;
+  color: #f1ae05;
   text-shadow: 0 0 10px #b8c40d, 0 0 20px #e8c40c;
 }
 
@@ -566,7 +566,7 @@ button {
 .skills-content h1 {
   font-size: 2rem;
   margin-bottom: 20px;
-  color: #4a90e2;
+  color: #e0e9f2;
 }
 
 .skills-content ul {
@@ -605,11 +605,11 @@ button {
 }
 
 .my-contact h1{
-    color: burlywood;
+    color: rgb(217, 213, 208);
 
 }
 .my-contact h3{
-    color: blue;
+    color: rgb(197, 207, 157);
 }
 
 .my-contact a{
@@ -655,7 +655,7 @@ button {
     display: inline-block;
     margin: 10px 15px;
     padding: 10px 20px;
-    background-color: #4a90e2; 
+    background-color: #707275; 
     color: #fff;
     text-decoration: none;
     border-radius: 8px;
@@ -910,3 +910,4 @@ button {
   box-shadow: 0 6px 12px rgba(0,0,0,0.4);
 
 }
+
